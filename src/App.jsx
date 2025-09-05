@@ -1,18 +1,14 @@
-import React from "react";
-import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import MovieList from "./components/MovieList/MovieList.jsx";  // 👈 Import MovieList
+import React, { useState } from "react";
+import MovieList from "./components/MovieList/MovieList";
 
 const App = () => {
-    return (
-        <div className="app">
-            <Navbar />
-            
-            <main>
-                <MovieList />   {/* 👈 Render MovieList here */}
-            </main>
-        </div>
-    );
+  const [category, setCategory] = useState("discover");
+
+  return (
+    <div>
+      <MovieList category={category} setCategory={setCategory} />
+    </div>
+  );
 };
 
 export default App;
