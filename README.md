@@ -1,4 +1,4 @@
-# MovieWalla
+# MovieWalla  (moviewalla.vercel.app)
 
 MovieWalla is a **movie recommendation app** built with **Vite** and **React**.  
 It provides a minimal setup for a fast, modern React app with hot module replacement (HMR) and linting configured.
